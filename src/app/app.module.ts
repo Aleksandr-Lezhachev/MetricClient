@@ -14,6 +14,8 @@ import {MetricService} from './metric.service';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from './auth/auth.interceptor';
 import {AuthService} from './auth.service';
+import {NgxPaginationModule} from 'ngx-pagination'; 
+
 const appRoutes: Routes =[
 {path:'',component: HomeComponent},
 {path:'auth',component: AuthComponent}
@@ -32,6 +34,7 @@ const appRoutes: Routes =[
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgxPaginationModule,
     FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
