@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add</title>
+</head>
+<body>
+<div class="col-md-6">
+  <h2 class="text-center">Add metric</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">Metric name:</label>
+      <input [(ngModel)]="metric[0].name" placeholder="Name" name="name" class="form-control" id="name">
+    </div>
+    <div class="form-group">
+      <label for="param">Param:</label>
+      <input [(ngModel)]="metric[0].param" placeholder="Param" name="param" class="form-control" id="param">
+    </div>
+    <div class="form-group">
+      <label for="value">Value:</label>
+      <input [(ngModel)]="metric[0].value" placeholder="Value" name="value" class="form-control" id="value">
+    </div>
+    <button class="btn btn-success" (click)="createMetric()">Create</button>
+  </form>
+</div>
+</body>
+</html>

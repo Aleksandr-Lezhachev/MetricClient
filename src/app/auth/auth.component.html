@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Authorization</title>
+</head>
+<body>
+<div class="col-md-6">
+  <h2 class="text-center">Authorization</h2>
+  <form>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input [(ngModel)]="user.username" placeholder="Username" name="username" class="form-control" id="username">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input [(ngModel)]="user.password" placeholder="Password" name="password" class="form-control" id="password">
+    </div>
+    <button class="btn btn-success" (click)="signIn()"> SignIn </button>
+  </form>
+</div>
+</body>
+</html>
